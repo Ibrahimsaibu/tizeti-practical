@@ -16,11 +16,11 @@
       "save": "^2.3.1"
    },
    "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
       "prestart": "npm install",
       "pretest": "npm install",
-       "build": "webpack --config webpack.config.js",
+      "build": "webpack --config webpack.config.js",
       "start": "cross-env HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
       "test": "cross-env CI=true ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
    },
@@ -31,7 +31,8 @@
       "enzyme-adapter-react-16": "^1.1.0",
       "expect": "^21.2.1",
       "jest-junit": "^3.3.0",
-      "react-test-renderer": "^16.2.0"
+      "react-test-renderer": "^16.2.0",
+      "webpack-cli": "^4.10.0"
    },
    "browserslist": {
       "production": [
